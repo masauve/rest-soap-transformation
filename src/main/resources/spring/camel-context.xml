@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd             http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd     http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd">
     <bean id="getCountryRequest"
         class="io.spring.guides.gs_producing_web_service.GetCountryRequest" />
-    <camel-cxf:cxfEndpoint address="http://localhost:8080/ws"
+    <camel-cxf:cxfEndpoint address="http://soap-spring-boot:8080/ws"
         id="countryDetailsLookup" 
         serviceClass="io.spring.guides.gs_producing_web_service.CountriesPort">
     </camel-cxf:cxfEndpoint>
